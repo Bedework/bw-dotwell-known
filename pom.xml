@@ -9,7 +9,7 @@
   <url>https://github.com/Bedework/bw-dotwell-known</url>
 
   <properties>
-    <bw-util.version>4.0.26</bw-util.version>
+    <bw-util-deploy.version>4.0.26</bw-util-deploy.version>
   </properties>
 
   <organization>
@@ -25,16 +25,15 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:Bedework/bw-util.git</connection>
-    <developerConnection>scm:git:git@github.com:Bedework/bw-util.git</developerConnection>
-    <url>https://github.com/Bedework/bw-util</url>
-    <tag>bw-util-4.0.9</tag>
+    <connection>scm:git:git@github.com:Bedework/bw-dotwell-known.git</connection>
+    <developerConnection>scm:git:git@github.com:Bedework/bw-dotwell-known.git</developerConnection>
+    <url>https://github.com/Bedework/bw-dotwell-known</url>
   </scm>
 
   <issueManagement>
     <system>github</system>
 
-    <url>https://github.com/Bedework/bw-util/issues</url>
+    <url>https://github.com/Bedework/bw-dotwell-known/issues</url>
   </issueManagement>
 
   <build>
@@ -55,9 +54,17 @@
       </plugin>
 
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>versions-maven-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.bedework</groupId>
         <artifactId>bw-util-maven-deploy</artifactId>
-        <version>${bw-util.version}</version>
+        <version>${bw-util-deploy.version}</version>
         <executions>
           <execution>
             <phase>install</phase>
@@ -70,7 +77,7 @@
           <noversion>true</noversion>
           <delete>true</delete>
           <warName>bw-dotwell-known</warName>
-          <baseDirPath>${project.basedir}/..</baseDirPath>
+          <baseDirPath>${org.bedework.deployment.basedir}</baseDirPath>
           <propsPath>${org.bedework.deployment.properties}</propsPath>
         </configuration>
       </plugin>
