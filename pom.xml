@@ -9,7 +9,7 @@
   <url>https://github.com/Bedework/bw-dotwell-known</url>
 
   <properties>
-    <bw-util-deploy.version>4.0.26</bw-util-deploy.version>
+    <bw-util-deploy.version>4.1.0</bw-util-deploy.version>
   </properties>
 
   <organization>
