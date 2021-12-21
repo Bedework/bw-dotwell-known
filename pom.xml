@@ -14,4 +14,10 @@
   <name>Bedework: redirector for .well-known</name>
   <description>A redirector for .well-known</description>
   <url>https://github.com/Bedework/bw-dotwell-known</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:Bedework/bw-dotwell-known.git</connection>
+    <developerConnection>scm:git:git@github.com:Bedework/bw-dotwell-known.git</developerConnection>
+    <url>https://github.com/Bedework/bw-dotwell-known</url>
+  </scm>
 </project>
